@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Redirecting...</title>
-<meta http-equiv="refresh" content="0; url=">
+<meta http-equiv="refresh" content="0; url=https://www.sbrgokta.com/app/UserHome">
 <style>
   html, body {
     margin: 0;
@@ -29,14 +29,8 @@
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
   }
-  @keyframes spin {
-    to { transform: rotate(360deg); }
-  }
-  .msg {
-    font-size: 14px;
-    letter-spacing: 0.05em;
-    opacity: 0.8;
-  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .msg { font-size: 14px; letter-spacing: 0.05em; opacity: 0.8; }
   .dots::after {
     content: '';
     animation: dots 1.5s steps(4, end) infinite;
@@ -47,23 +41,20 @@
     50%  { content: '..'; }
     75%  { content: '...'; }
   }
-  .fallback {
-    margin-top: 12px;
-    font-size: 12px;
-    opacity: 0.5;
-  }
-  .fallback a {
-    color: #58a6ff;
-  }
+  .fallback { margin-top: 12px; font-size: 12px; opacity: 0.5; }
+  .fallback a { color: #58a6ff; }
 </style>
 <script>
-  location.replace('https://www.sbrgokta.com/app/UserHome');
+  window.location.replace('https://www.sbrgokta.com/app/UserHome');
 </script>
 </head>
 <body>
   <div class="wrap">
     <div class="spinner"></div>
     <div class="msg">Redirecting<span class="dots"></span></div>
+    <div class="fallback">
+      <a href="https://www.sbrgokta.com/app/UserHome">こちらをクリック</a>
+    </div>
   </div>
 </body>
 </html>
